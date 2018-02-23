@@ -1,0 +1,46 @@
+p {
+  font-size: 2em;
+}
+
+.foo {
+  font-size: 2em;
+}
+
+
+
+.square {
+  width: 99vmin;
+  height: 99vmin;
+  line-height: 100px;
+  color: white;
+  text-align: center;
+  background-color: red;
+}
+
+.md, .lg {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .square {
+    background-color: green;
+  }
+  .md {
+    display: block;
+  }
+  .sm, .lg {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .square {
+    background-color: blue;
+  }
+  .lg {
+    display: block;
+  }
+  .sm, .md {
+    display: none;
+  }
+}
